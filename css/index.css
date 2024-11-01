@@ -120,6 +120,28 @@ body{
         border-radius: 50px;
     }
 }
+@media screen and (max-height: 827px) {
+    .icon-list {
+        display: block;
+    }
+    .navigation {
+        position: absolute;
+        flex-direction: column;
+        top: 0;
+        background-color: var(--color-dark5);
+        height: 80vh;
+        width: 35vw;
+        border-radius: 10px;
+        padding: 1em;
+        margin-left: -100vw;
+        transition: 1s;
+    }
+    .img-quasar {
+        width: 70px;
+        width: 70px;
+        border-radius: 50px;
+    }
+}
 
 
 .footer {
