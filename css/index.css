@@ -38,7 +38,8 @@ body{
     flex-direction: row;
     align-items: center;
     gap: 3em;
-    transition: 1s;
+    z-index: 2;
+
 }
 .navigation a {
     text-decoration: none;
@@ -57,6 +58,7 @@ body{
     color: var(--color-white);
     text-align: center;
     height: 94.75vh;
+    transition: 1s;
 
 }
 .icon-list {
@@ -71,7 +73,8 @@ body{
 }
 @keyframes showSidebar {
     from {margin-left: -100vw;}
-    top { margin-left: -10vw;}
+    top {margin-left: -10vw;}
+    
 }
 @media screen and (max-width: 768px) {
     .icon-list {
@@ -82,10 +85,12 @@ body{
         flex-direction: column;
         top: 0;
         background-color: var(--color-dark5);
-        height: 100vh;
+        height: 70vh;
         width: 35vw;
+        border-radius: 10px;
         padding: 1em;
         margin-left: -100vw;
+        transition: 1s;
     }
     .img-quasar {
         width: 70px;
