@@ -76,7 +76,7 @@ body{
     top {margin-left: -10vw;}
     
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1334px) {
     .icon-list {
         display: block;
     }
@@ -85,7 +85,7 @@ body{
         flex-direction: column;
         top: 0;
         background-color: var(--color-dark5);
-        height: 70vh;
+        height: 50vh;
         width: 35vw;
         border-radius: 10px;
         padding: 1em;
@@ -98,6 +98,29 @@ body{
         border-radius: 50px;
     }
 }
+@media screen and (max-width: 800px) {
+    .icon-list {
+        display: block;
+    }
+    .navigation {
+        position: absolute;
+        flex-direction: column;
+        top: 0;
+        background-color: var(--color-dark5);
+        height: 30vh;
+        width: 35vw;
+        border-radius: 10px;
+        padding: 1em;
+        margin-left: -100vw;
+        transition: 1s;
+    }
+    .img-quasar {
+        width: 70px;
+        width: 70px;
+        border-radius: 50px;
+    }
+}
+
 
 .footer {
     background-color: var(--color-blue2);
