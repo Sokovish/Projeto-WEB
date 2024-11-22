@@ -24,6 +24,7 @@ main{
     height: 100vh;
 }
 .folder-container {
+    margin-left: 20px;
     text-align: center;
     background-color: #111;
     border: 2px solid #444;
@@ -37,6 +38,8 @@ main{
     border-radius: 10px;
     border: 2px solid #ffdd57;
     cursor: pointer;
+    width: 400px;
+    height: 400px;
     transition: transform 0.3s, box-shadow 0.3s;
   }
 

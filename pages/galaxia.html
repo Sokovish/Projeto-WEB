@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="imagex/png" href="../icon/logo-quasar.ico">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/galaxia.css">
+    <title>Universo Profundo</title>
+</head>
+<body>
+    <header class="header" id="header">
+            <button onclick="toggleSidebar()" class="icon-list">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                  </svg>
+            </button>
+        <div class="img-header" id="img-header">
+            <a href="../index.html"><img class="img-quasar" src="../img/logo-quasar.png" alt="quasar"></a>
+
+        </div>
+        <div class="navigation" id="navigation">
+            <button onclick="toggleSidebar()" class="icon-list" id="icon-list2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-list-nested" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M4.5 11.5A.5.5 0 0 1 5 11h10a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5m-2-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m-2-4A.5.5 0 0 1 1 3h10a.5.5 0 0 1 0 1H1a.5.5 0 0 1-.5-.5"/>
+                  </svg>
+            </button>
+            <a href="../pages/comuninade.html" class="comunidade">Comunidade</a>
+            <a href="../pages/sobre.html" class="sobre">Sobre-nós</a>
+            <a href="../pages/entrar.html" class="entrar">Entrar</a>
+            <a href="../pages/cadastro.html" class="cadastro">Cadastro</a>
+        </div>
+
+    </header>
+
+    <main tabindex="0" onclick="closeSidebar()" class="content" id="content">
+        <div id="cabecalhoGalaxia">
+            <h1>Galáxias</h1>
+            <p>Explorando os mistérios do universo</p>
+        </div>
+          
+          <div class="container">
+            <!-- O que são galáxias -->
+            <section>
+              <h2>O que são galáxias?</h2>
+              <p>Galáxias são enormes sistemas de estrelas, gás, poeira e matéria escura, todos ligados pela gravidade. Elas variam em tamanho e formas, mas todas possuem uma grande quantidade de estrelas e outros objetos celestes organizados de forma estável pela gravidade.</p>
+            </section>
+        
+            <!-- Imagens relacionadas ao conceito -->
+            <div class="image-container">
+              <img src="../img/galaxias/galaxia-espiral.png" alt="Representação de uma galáxia espiral">
+              <img src="../img/galaxias/BraçoViaLactea.png" alt="Visão artística da Via Láctea">
+            </div>
+        
+            <!-- Como as galáxias são formadas -->
+            <section>
+              <h2>Como as galáxias são formadas?</h2>
+              <p>As galáxias começaram a se formar logo após o Big Bang, há cerca de 13 bilhões de anos. Elas surgiram da condensação de gases primordiais que se uniram sob a força da gravidade, formando estrelas e, eventualmente, as primeiras galáxias.</p>
+              <p>Com o tempo, essas galáxias evoluíram, com estrelas se formando e morrendo, e colisões entre galáxias ocorrendo, criando novas estruturas e gerando novos processos de formação estelar.</p>
+            </section>
+        
+            <!-- Imagens adicionais -->
+            <div class="image-container">
+              <img src="../img/galaxias/galaxiaFormacao.jpg" alt="Ilustração da formação de uma galáxia">
+              <img src="../img/galaxias/fusaoGalaxias.jpg" alt="Representação de uma fusão de galáxias">
+            </div>
+        
+            <!-- Tipos de galáxias -->
+            <section>
+              <h2>Tipos de Galáxias</h2>
+              <ul>
+                <li><strong>Galáxias Espirais:</strong> Possuem braços espirais que se estendem a partir de um núcleo central, como a Via Láctea.</li>
+                <li><strong>Galáxias Elípticas:</strong> Têm uma forma arredondada ou elíptica, com uma predominância de estrelas mais velhas.</li>
+                <li><strong>Galáxias Irregulares:</strong> Não têm uma forma definida e são geralmente menores e desorganizadas.</li>
+                <li><strong>Galáxias Lenticulares:</strong> Têm uma forma entre as galáxias espirais e elípticas, com um disco plano, mas sem os braços espirais.</li>
+              </ul>
+            </section>
+        
+            <!-- Curiosidades sobre galáxias -->
+            <section>
+              <h2>Curiosidades</h2>
+              <p>A Via Láctea, nossa galáxia, contém centenas de bilhões de estrelas e um buraco negro supermassivo em seu centro, que influencia a estrutura da galáxia.</p>
+              <p>As galáxias podem se fundir umas com as outras, criando novas galáxias ainda maiores. Um exemplo famoso disso é a futura colisão da Via Láctea com a Galáxia de Andrômeda.</p>
+            </section>
+            <a href="https://www.nasa.gov/galaxies">Saiba Mais</a>
+          </div>
+    </main>
+
+    <footer>
+        <div class="footer">
+
+        </div>
+    </footer>
+    <script src="../js/sidebar.js"></script>
+</body>
+</html>

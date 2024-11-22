@@ -218,3 +218,6 @@ body{
     font-size: 1.3rem;
       color: #ccc;
 }
+li{
+    list-style: none;
+}
