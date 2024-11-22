@@ -15,3 +15,16 @@ function toggleSidebar(){
        
     }
 }
+function closeSidebar() {
+    if(showSidebar){
+
+        toggleSidebar();
+
+    }
+}
+
+window.addEventListener('resize', function(event){
+    if(window.innerWidth > 1334 && showSidebar){
+        toggleSidebar();
+    }
+});
