@@ -16,46 +16,6 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: var(--color-blue1);
 }
-main{
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-.folder-container {
-    text-align: center;
-    background-color: #111;
-    border: 2px solid #444;
-    border-radius: 10px;
-    padding: 20px;
-    max-width: 400px;
-  }
-
-  .folder-container img {
-    width: 100%;
-    border-radius: 10px;
-    border: 2px solid #ffdd57;
-    cursor: pointer;
-    transition: transform 0.3s, box-shadow 0.3s;
-  }
-
-  .folder-container img:hover {
-    transform: scale(1.01);
-    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.3);
-  }
-
-  .folder-container h1 {
-    font-size: 1.8rem;
-    color: #ffdd57;
-    margin-bottom: 10px;
-  }
-
-  .folder-container p {
-    font-size: 1rem;
-    color: #ccc;
-    margin-bottom: 20px;
-  }
 .img-quasar {
     width: 70px;
     width: 70px;
@@ -68,6 +28,7 @@ main{
 }
 .header {
     height: 6em;
+    background-color: var(--color-blue2);
     justify-content: space-between;
     padding: 0 5%;
 }
@@ -96,7 +57,7 @@ main{
 .content {
     color: var(--color-white);
     text-align: center;
-    height: 100vh;
+    height: 94.75vh;
     transition: 1s;
 
 }
@@ -124,7 +85,7 @@ main{
         flex-direction: column;
         top: 0;
         background-color: var(--color-dark5);
-        height: 50vh;
+        height: 70vh;
         width: 35vw;
         border-radius: 10px;
         padding: 1em;
@@ -137,51 +98,6 @@ main{
         border-radius: 50px;
     }
 }
-@media screen and (max-width: 800px) {
-    .icon-list {
-        display: block;
-    }
-    .navigation {
-        position: absolute;
-        flex-direction: column;
-        top: 0;
-        background-color: var(--color-dark5);
-        height: 50vh;
-        width: 35vw;
-        border-radius: 10px;
-        padding: 1em;
-        margin-left: -100vw;
-        transition: 1s;
-    }
-    .img-quasar {
-        width: 70px;
-        width: 70px;
-        border-radius: 50px;
-    }
-}
-@media screen and (max-height: 827px) {
-    .icon-list {
-        display: block;
-    }
-    .navigation {
-        position: absolute;
-        flex-direction: column;
-        top: 0;
-        background-color: var(--color-dark5);
-        height: 80vh;
-        width: 35vw;
-        border-radius: 10px;
-        padding: 1em;
-        margin-left: -100vw;
-        transition: 1s;
-    }
-    .img-quasar {
-        width: 70px;
-        width: 70px;
-        border-radius: 50px;
-    }
-}
-
 
 .footer {
     background-color: var(--color-blue2);
