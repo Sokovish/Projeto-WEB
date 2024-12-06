@@ -12,17 +12,22 @@
     --color-dark5: #343434;
     --color-purple: #b040ff;
 }
-body{
+
+body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: var(--color-blue1);
 }
-main{
+
+main {
     color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    flex-wrap: wrap; /* Adicionado para garantir que os itens se empilhem em telas menores */
+    height: auto; /* Ajuste para permitir que o conteúdo se ajuste corretamente */
+    padding: 10px;
 }
+
 .folder-container {
     margin-left: 20px;
     text-align: center;
@@ -31,9 +36,11 @@ main{
     border-radius: 10px;
     padding: 20px;
     max-width: 400px;
-  }
+    flex: 1 1 calc(33.33% - 40px); /* Garantir que ocupe até 33% da largura em telas grandes */
+    margin-bottom: 20px;
+}
 
-  .folder-container img {
+.folder-container img {
     width: 100%;
     border-radius: 10px;
     border: 2px solid #ffdd57;
@@ -41,54 +48,58 @@ main{
     width: 400px;
     height: 400px;
     transition: transform 0.3s, box-shadow 0.3s;
-  }
+}
 
-  .folder-container img:hover {
+.folder-container img:hover {
     transform: scale(1.01);
     box-shadow: 0 4px 15px rgba(255, 255, 255, 0.3);
-  }
+}
 
-  .folder-container h1 {
+.folder-container h1 {
     font-size: 1.8rem;
     color: #ffdd57;
     margin-bottom: 10px;
-  }
+}
 
-  .folder-container p {
+.folder-container p {
     font-size: 1rem;
     color: #ccc;
     margin-bottom: 20px;
-  }
+}
+
 .img-quasar {
     width: 70px;
     width: 70px;
     border-radius: 50px;
     transition: 0.5s;
 }
-.img-quasar:hover{
+
+.img-quasar:hover {
     height: 75px;
     width: 75px;
 }
+
 .header {
     height: 6em;
     justify-content: space-between;
     padding: 0 5%;
 }
-.header,
-.navigation {
+
+.header, .navigation {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 3em;
     z-index: 2;
-
 }
+
 .navigation a {
     text-decoration: none;
     color: var(--color-purple);
     transition: 0.5s;
     font-weight: bold;
 }
+
 .navigation a:hover {
     color: white;
     background-color: var(--color-dark3);
@@ -101,8 +112,8 @@ main{
     text-align: center;
     height: 100vh;
     transition: 1s;
-
 }
+
 .icon-list {
     display: none;
     background-color: transparent;
@@ -110,14 +121,16 @@ main{
     color: var(--color-white);
     cursor: pointer;
 }
+
 #icon-list2 {
     margin: 3em 10em 0 5em;
 }
+
 @keyframes showSidebar {
     from {margin-left: -100vw;}
     top {margin-left: -10vw;}
-    
 }
+
 @media screen and (max-width: 1334px) {
     .icon-list {
         display: block;
@@ -140,6 +153,7 @@ main{
         border-radius: 50px;
     }
 }
+
 @media screen and (max-width: 800px) {
     .icon-list {
         display: block;
@@ -161,7 +175,21 @@ main{
         width: 70px;
         border-radius: 50px;
     }
+
+    /* Ajustando o layout das divs folder-container */
+    .folder-container {
+        max-width: 100%; /* Ajuste para telas menores */
+       /* flex: 1 1 100%; /* Faz com que as divs ocupem 100% da largura disponível */
+        margin-left: 0;
+    }
+    footer{
+        margin-top: auto; 
+    }
+    .content{
+        height: 100%;
+    }
 }
+
 @media screen and (max-height: 827px) {
     .icon-list {
         display: block;
@@ -185,8 +213,49 @@ main{
     }
 }
 
-
 .footer {
     background-color: var(--color-blue2);
-    height: 6em;
+    color: var(--color-white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    font-size: 1rem;
+    flex-wrap: wrap;
+}
+
+.footer-content, .footer-contact {
+    margin: 10px;
+}
+
+.footer-content p, .footer-contact p {
+    margin: 5px 0;
+}
+
+.footer a {
+    color: var(--color-purple);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: var(--color-white);
+    text-decoration: underline;
+}
+
+.footer-contact a {
+    font-weight: bold;
+    color: var(--color-purple);
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        margin-top: auto;
+    }
+    .footer-content, .footer-contact {
+        margin: 5px 0;
+    }
 }

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="imagex/png" href="../icon/logo-quasar.ico">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/estrela.css">
+    <title>Universo Profundo</title>
+</head>
+<body>
+    <header class="header" id="header">
+        <button onclick="toggleSidebar()" class="icon-list">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+            </svg>
+        </button>
+        <div class="img-header" id="img-header">
+            <a href="../index.html"><img class="img-quasar" src="../img/logo-quasar.png" alt="quasar"></a>
+        </div>
+        <div class="navigation" id="navigation">
+            <button onclick="toggleSidebar()" class="icon-list" id="icon-list2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-list-nested" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M4.5 11.5A.5.5 0 0 1 5 11h10a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5m-2-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m-2-4A.5.5 0 0 1 1 3h10a.5.5 0 0 1 0 1H1a.5.5 0 0 1-.5-.5"/>
+                </svg>
+            </button>
+            <a href="../pages/sobre.html" class="sobre">Sobre-nós</a>
+            <a href="../pages/entrar.html" class="entrar">Entrar</a>
+            <a href="../pages/cadastro.html" class="cadastro">Cadastro</a>
+        </div>
+    </header>
+
+    <main tabindex="0" onclick="closeSidebar()" class="content" id="content">
+        <div id="cabecalhoEstrelas">
+            <h1>Estrelas</h1>
+            <p>Descubra a vida e a evolução dos corpos celestes mais brilhantes do universo</p>
+        </div>
+          
+        <div class="container">
+            <!-- O que são estrelas -->
+            <section>
+                <h2>O que são estrelas?</h2>
+                <p>Estrelas são corpos celestes compostos principalmente por hidrogênio e hélio, que geram luz e calor através de reações de fusão nuclear em seus núcleos. Essas reações convertem hidrogênio em hélio, liberando energia que irradia para o espaço.</p>
+            </section>
+        
+            <!-- Imagens relacionadas ao conceito -->
+            <div class="image-container">
+                <img src="../img/estrelas/estrelha-brilhante.webp" alt="Representação de uma estrela brilhante">
+                <img src="../img/estrelas/constelacao.webp" alt="Constelação de estrelas no céu noturno">
+            </div>
+        
+            <!-- Ciclo de vida das estrelas -->
+            <section>
+                <h2>Ciclo de Vida das Estrelas</h2>
+                <p>As estrelas passam por diferentes estágios ao longo de suas vidas:</p>
+                <ul>
+                    <li><strong>Formação:</strong> Começam como nuvens de gás e poeira chamadas nebulosas.</li>
+                    <li><strong>Estágio Principal:</strong> Onde passam a maior parte da vida queimando hidrogênio.</li>
+                    <li><strong>Fase Final:</strong> Dependendo de sua massa, podem se tornar anãs brancas, estrelas de nêutrons ou buracos negros.</li>
+                </ul>
+            </section>
+        
+            <!-- Curiosidades -->
+            <section>
+                <h2>Curiosidades</h2>
+                <p>Estrelas como o Sol são consideradas de tamanho médio. Existem estrelas muito maiores chamadas gigantes e supergigantes, e estrelas menores conhecidas como anãs vermelhas.</p>
+                <p>Uma estrela pode brilhar por bilhões de anos, mas a maior parte do universo é composta por estrelas já "mortas" que não irradiam mais luz.</p>
+            </section>
+
+            <!-- Classificação das estrelas -->
+            <section>
+                <h2>Classificação das Estrelas</h2>
+                <p>Estrelas são classificadas com base em sua temperatura e luminosidade. A classificação mais comum é:</p>
+                <ul>
+                    <li><strong>O:</strong> As mais quentes e brilhantes, com cores azuladas.</li>
+                    <li><strong>B:</strong> Estrelas brancas-azuladas.</li>
+                    <li><strong>A:</strong> Brancas brilhantes.</li>
+                    <li><strong>F:</strong> Branco-amareladas.</li>
+                    <li><strong>G:</strong> Como o Sol, de coloração amarela.</li>
+                    <li><strong>K:</strong> Laranja-avermelhadas.</li>
+                    <li><strong>M:</strong> Anãs vermelhas, as mais frias e comuns.</li>
+                </ul>
+            </section>
+
+            <!-- Imagens adicionais -->
+            <div class="image-container">
+                <img src="../img/estrelas/giante-vermelha.jpg" alt="Representação de uma estrela gigante vermelha">
+                <img src="../img/estrelas/branca.webp" alt="Ilustração de uma anã branca">
+            </div>
+            
+            <a href="https://www.nasa.gov/stars" target="_blank">Saiba Mais</a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-content">
+                <p>&copy; 2024 Universo Profundo. Todos os direitos reservados.</p>
+                <p>Feito com ❤️ por entusiastas do cosmos.</p>
+                <p>
+                    Siga-nos:
+                    <a href="" target="_blank">Facebook</a> |
+                    <a href="" target="_blank">Twitter</a> |
+                    <a href="" target="_blank">Instagram</a>
+                </p>
+            </div>
+            <div class="footer-contact">
+                <p>Contato: <a href="mailto:contato@universoprofundo.com">contato@universoprofundo.com</a></p>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/sidebar.js"></script>
+</body>
+</html>

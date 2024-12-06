@@ -56,7 +56,7 @@ body{
 .content {
     color: var(--color-white);
     text-align: center;
-    height: 300vh;
+    height: 200vh;
     transition: 1s;
 
 }
@@ -220,4 +220,49 @@ body{
 }
 li{
     list-style: none;
+}
+.footer {
+    background-color: var(--color-blue2); /* Cor de fundo consistente com o tema */
+    color: var(--color-white); /* Texto branco para contraste */
+    display: flex;
+    justify-content: space-between; /* Espaçamento entre as seções */
+    align-items: center;
+    padding: 20px;
+    font-size: 1rem;
+    flex-wrap: wrap; /* Ajusta o layout em telas menores */
+}
+
+.footer-content, .footer-contact {
+    margin: 10px; /* Espaçamento interno */
+}
+
+.footer-content p, .footer-contact p {
+    margin: 5px 0; /* Espaçamento entre os parágrafos */
+}
+
+.footer a {
+    color: var(--color-purple); /* Link na cor roxa */
+    text-decoration: none; /* Remove sublinhado dos links */
+    font-weight: bold;
+    transition: color 0.3s ease; /* Transição suave na mudança de cor */
+}
+
+.footer a:hover {
+    color: var(--color-white); /* Branco ao passar o mouse */
+    text-decoration: underline; /* Adiciona sublinhado no hover */
+}
+
+.footer-contact a {
+    font-weight: bold; /* Destaca o e-mail */
+    color: var(--color-purple);
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        flex-direction: column; /* Coloca os itens em coluna em telas menores */
+        text-align: center;
+    }
+    .footer-content, .footer-contact {
+        margin: 5px 0;
+    }
 }
