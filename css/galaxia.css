@@ -266,3 +266,16 @@ li{
         margin: 5px 0;
     }
 }
+@media screen and (max-width: 1366px) {
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        margin-top: auto;
+    }
+    .footer-content, .footer-contact {
+        margin: 5px 0;
+    }
+    .content{
+        height: 300vh;
+    }
+}
